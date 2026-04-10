@@ -1,0 +1,104 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
+
+.nav-logo span {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-main);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-links a:hover, .nav-links a.active-link {
+  color: var(--primary-color);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
