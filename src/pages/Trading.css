@@ -1,0 +1,67 @@
+.trading-hero {
+  background: linear-gradient(rgba(18, 38, 58, 0.8), rgba(18, 38, 58, 0.85)), url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover;
+  padding: 7rem 0;
+  color: white;
+}
+
+.text-center { text-align: center; }
+
+.trading-hero h1 { font-size: 3.2rem; margin-bottom: 1rem; color: #fff; }
+.trading-hero p { font-size: 1.2rem; color: #d1e0ec; max-width: 600px; margin: 0 auto; }
+
+.trading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: -8rem; /* Overlaps with hero slightly */
+  margin-bottom: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.trade-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  border-top: 4px solid #3498db;
+}
+
+.trade-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+.trade-card h3 { color: #12263a; margin-bottom: 1rem; }
+.trade-card p { color: #666; font-size: 0.95rem; }
+
+.trade-network {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.trade-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.trade-content h2 { font-size: 2.5rem; color: #12263a; margin-bottom: 1.5rem; }
+.trade-content p { color: #555; margin-bottom: 1.5rem; font-size: 1.1rem; }
+.trade-content ul { list-style-position: inside; margin-bottom: 2rem; color: #444; }
+.trade-content li { margin-bottom: 0.5rem; }
+
+.btn-trade {
+  background: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+.btn-trade:hover { background: #2980b9; }
+
+@media (max-width: 768px) {
+  .trading-grid { margin-top: 2rem; }
+  .trade-network { grid-template-columns: 1fr; }
+}

@@ -1,128 +1,61 @@
-# BLUEPRINT — Wholesale React Website (Latest Version)
+# BLUEPRINT — Multi-Vertical Business Architecture (React)
 
 ## Project Overview
 
-Build a **fully responsive, functional Single Page Application (SPA)** for a wholesale business using the **latest version of React (React 18+)**. The website must be properly structured with modern reusable functional components, React Router for navigation, and adhere to modern deployment standards. The visual design and layout must be inspired by the reference website below.
-
-**Reference Website:** https://superfood.qodeinteractive.com/grocery-home/
+The website is pivoting from a single-vertical grocery store to a **Multi-Vertical Conglomerate Portal**. The application will feature a central corporate landing page connecting to **four creatively distinct business divisions**.
 
 ---
 
-## Tech Stack & Architecture (Latest React Setup)
+## The Divisions (Page Architecture)
 
-| Element              | Choice / Instruction                                        |
-|----------------------|-------------------------------------------------------------|
-| **Framework**        | React Latest via Vite (`npm create vite@latest . -- --template react`) |
-| **Routing**          | React Router DOM v6+ (`npm install react-router-dom`)       |
-| **Styling**          | Vanilla CSS or Modules (No heavy frameworks initially)      |
-| **State Management** | React Context API & Modern Hooks (`useState`, `useEffect`)  |
-| **Data Source**      | Mock JSON data `mockData.js` (Simulated backend)            |
-
----
-
-## Folder Structure (Modern React standard)
-
-```
-/src
-├── assets/            # Images, icons, and global CSS (App.css, index.css)
-├── components/        # Reusable UI Pieces
-│   ├── Navbar/
-│   ├── Footer/
-│   ├── ProductCard/
-│   ├── CategoryCard/
-│   └── SectionHeader/
-├── pages/             # Route Views
-│   ├── Home.jsx
-│   ├── Products.jsx
-│   ├── Category.jsx
-│   ├── About.jsx
-│   └── Contact.jsx
-├── context/           # AppContext for global state (e.g., Cart context)
-├── data/              # mockData.js (categories, products arrays)
-├── App.jsx            # Main app component with Routes configuration
-└── main.jsx           # React entry point (`ReactDOM.createRoot`)
-```
+| Division | Route Location | Focus |
+|---|---|---|
+| **Makhana & Agro Products** | `/agro` | Wholesale agricultural products, farming networks, and bulk deliveries. |
+| **Real Estate & Properties** | `/real-estate` | Commercial workspaces, premium residences, and land acquisition. |
+| **Trading, Import & Export** | `/trading` | Global logistics, import sourcing, and export destinations. |
+| **Financial Loans** | `/loan` | Business loans, farming credit, and application processes. |
 
 ---
 
-## Tasks (Proper Structured Execution)
+## Implementation Tasks
 
-### TASK 1 — Latest React Project Initialization
-- [ ] Initialize project using Vite: `npm create vite@latest ./ -- --template react`
-- [ ] Clean up Vite's default boilerplate (`App.css`, `index.css` logos, etc.)
-- [ ] Install latest dependencies: `npm install react-router-dom react-icons`
-- [ ] Set up the folder structure strictly as defined above
-- [ ] Add global CSS variables (colors, fonts matching reference) in `index.css`
+### TASK 1 — Navigation Refactor
+- [ ] Update `<Navbar />` to include all dedicated division links.
+- [ ] Implement responsive dropdown menus or direct links for all vertical access on mobile view.
 
-### TASK 2 — Mock Data Setup
-- [ ] Create `src/data/mockData.js`
-- [ ] Define array of categories (id, name, image, description)
-- [ ] Define array of products (id, categoryId, name, price, unit, image)
-- [ ] Export these to power dynamic rendering cleanly.
+### TASK 2 — Corporate Home Page Overhaul
+- [ ] Redesign `Home.jsx` to be a corporate landing structure.
+- [ ] Replace the grocery grid with **4 large feature cards** (Agro, Real Estate, Trading, Loans).
+- [ ] Add smooth CSS hover states directing users to those routes.
 
-### TASK 3 — React Router & Core Layout Setup
-- [ ] Wrap application with `<BrowserRouter>` in `main.jsx`
-- [ ] Create basic placeholder functional components for all files in `pages/`
-- [ ] Setup `<Routes>` and `<Route>` maps in `App.jsx`
-- [ ] Create a general `Layout` component holding `<Navbar />`, `<Outlet />`, and `<Footer />`
+### TASK 3 — Makhana & Agro Products Page
+- [ ] Develop `src/pages/AgroProducts.jsx`.
+- [ ] Build a creative, earthy design tailored to food/farming.
+- [ ] Retain existing mock data arrays for product listings where necessary.
 
-### TASK 4 — Configured Navbar & Footer Component
-- [ ] Build `<Navbar />` with sticky positioning
-- [ ] Implement desktop navigation links using `<NavLink>` for active link styling
-- [ ] Implement responsive hamburger menu with React `useState` (`isOpen`)
-- [ ] Build `<Footer />` incorporating logo, quick links, and social icons
-- [ ] Match colors precisely to reference site's theme 
+### TASK 4 — Real Estate & Properties Page
+- [ ] Develop `src/pages/RealEstate.jsx`.
+- [ ] Use luxurious/structural placeholders representing properties.
+- [ ] Create specialized cards mapping pseudo property data (prices, square footage).
 
-### TASK 5 — Home Page: Hero & About Sections
-- [ ] Build full-width `<Hero />` component with background image/gradient and CTA
-- [ ] Build `<AboutPreview />` component highlighting key wholesale benefits (Direct from farmers, Bulk orders etc.)
-- [ ] Render both cleanly on the `Home.jsx` page
+### TASK 5 — Trading & Import/Export Page
+- [ ] Develop `src/pages/Trading.jsx`.
+- [ ] Construct an industrial/global aesthetic.
+- [ ] Highlight a text-driven "Our Network" or "Supported Regions" section.
 
-### TASK 6 — Reusable Product & Category Component Cards
-- [ ] Build `<CategoryCard category={category} />` component (pass props)
-- [ ] Build `<ProductCard product={product} />` component (pass props)
-- [ ] Strictly match the reference site's shadow, border-radius, and aspect ratio via CSS
+### TASK 6 — Loans Page
+- [ ] Develop `src/pages/Loan.jsx`.
+- [ ] Structure a clean, professional, trustworthy layout (blue/white tones typically).
+- [ ] Build an "Application Steps" visual guide (1. Apply, 2. Approve, 3. Fund).
 
-### TASK 7 — Functional Category & Product Grids
-- [ ] Build `<CategorySection />` mapping across mock categories
-- [ ] Build `<ProductSection />` mapping across designated featured products
-- [ ] Render both on `Home.jsx` 
-- [ ] Create `Products.jsx` page rendering **ALL** products
-- [ ] Implement a category filter on the Products page (state-filtered list)
-
-### TASK 8 — Contact Page & Controlled Form
-- [ ] Build functional contact form inside `Contact.jsx`
-- [ ] Form must utilize **Controlled Components** (React state for all input fields)
-- [ ] Prevent default submission & show success message on submit
-
-### TASK 9 — Responsiveness, Animations & Polish
-- [ ] Ensure CSS Flexbox/Grid layouts respond properly at 1024px, 768px, and 480px.
-- [ ] Add nice hover states (shadows, transforms) using vanilla CSS transitions
-- [ ] Add page transition logic (`window.scrollTo(0,0)` mapped onto a `useEffect` per route change)
-
-### TASK 10 — State Management (Cart / Interactive UI)
-- [ ] Set up `CartContext` utilizing `createContext` and `useContext`
-- [ ] Update `<ProductCard />` button to `dispatch`/add items to Cart state
-- [ ] Develop a minimal Slide-out Cart UI to review selected products
+### TASK 7 — Application Router & Assembly
+- [ ] Redefine `<Routes>` in `App.jsx` pointing to (`/agro`, `/real-estate`, `/trading`, `/loan`).
+- [ ] Add page transitions dynamically rendering distinct aesthetics.
 
 ---
 
 ## Technical Specifications & Rules
 
-| Property               | Value / Instruction                                           |
-|------------------------|---------------------------------------------------------------|
-| **Core Library**       | `React 18+` (Latest standard functionality)                   |
-| **Primary Font**       | Inter, Outfit, or Poppins (Google Fonts)                      |
-| **Navbar BG Color**    | Exact copy from reference site                                |
-| **Routing Strategy**   | Client-Side Routing (`react-router-dom`)                      |
-| **CSS Methodology**    | Vanilla CSS `ComponentName.css` or Modules. No Tailwind.      |
-| **Components**         | ES6 Functional Components with Hooks ONLY (No class components) |
-
----
-
-## Notes for AI Developer
-1. Use **Vite** for initializing the React project as it is the modern standard over CRA.
-2. Ensure strict usage of **React Hooks** (`useState`, `useEffect`, `useContext`).
-3. Keep logic modular. Divide UI into the smallest logical components.
-4. Avoid any UI frameworks like Bootstrap/Tailwind. Rely strictly on vanilla CSS configurations.
-5. All tasks marked `[ ]` must be converted to `[x]` upon completion during execution.
+- **Design Creativity**: Ensure each vertical page feels uniquely styled while sharing the global navbar and footer. Use CSS modularity to prevent structural overlap.
+- **Placeholder Imaging**: Stick to high-quality unsplash URLs (`https://images.unsplash.com/...`) for all division covers to mimic premium quality.
+- **Routing**: Ensure zero broken links across internal `react-router-dom` links.

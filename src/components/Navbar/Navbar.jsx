@@ -13,12 +13,15 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container nav-container">
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          SUPER<span>FOOD</span>
+          NSP<span>GROUP</span>
         </Link>
         
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <NavLink to="/" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Home</NavLink>
-          <NavLink to="/products" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Products</NavLink>
+          <NavLink to="/agro" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Agro & Makhana</NavLink>
+          <NavLink to="/real-estate" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Real Estate</NavLink>
+          <NavLink to="/trading" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Import/Export</NavLink>
+          <NavLink to="/loan" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Loans</NavLink>
           <NavLink to="/contact" onClick={closeMenu} className={({isActive}) => isActive ? "active-link" : ""}>Contact</NavLink>
         </div>
 

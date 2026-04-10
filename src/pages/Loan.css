@@ -1,0 +1,96 @@
+.loan-page {
+  background-color: #f4f7f6;
+}
+
+.loan-hero {
+  background: linear-gradient(rgba(10, 45, 90, 0.85), rgba(10, 45, 90, 0.9)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover;
+  padding: 8rem 0;
+  color: white;
+}
+
+.loan-hero-content {
+  max-width: 600px;
+}
+
+.loan-hero h1 { font-size: 3.2rem; margin-bottom: 1rem; color: white; }
+.loan-hero p { font-size: 1.15rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6; }
+
+.btn-loan-primary {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-loan-primary:hover { background-color: #0284c7; }
+
+.loan-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: -5rem;
+  margin-bottom: 6rem;
+}
+
+.loan-feat-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-bottom: 4px solid #0ea5e9;
+}
+
+.lf-icon { font-size: 3rem; margin-bottom: 1rem; }
+.loan-feat-card h3 { color: #0f172a; margin-bottom: 1rem; }
+.loan-feat-card p { color: #64748b; font-size: 0.95rem; }
+
+.process-section {
+  text-align: center;
+  background: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.process-section h2 { margin-bottom: 3rem; color: #0f172a; font-size: 2.2rem; }
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.step { flex: 1; padding: 0 1rem; text-align: center; }
+
+.step-num {
+  width: 60px;
+  height: 60px;
+  background: #f0f9ff;
+  color: #0ea5e9;
+  border: 2px solid #bae6fd;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.step h4 { color: #0f172a; margin-bottom: 0.5rem; }
+.step p { color: #64748b; font-size: 0.9rem; }
+
+.step-line {
+  flex: 0.5;
+  height: 2px;
+  background: #bae6fd;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .process-steps { flex-direction: column; align-items: center; gap: 2rem; }
+  .step-line { display: none; }
+  .loan-features { margin-top: 2rem; }
+}
