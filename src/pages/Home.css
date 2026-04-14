@@ -1,84 +1,111 @@
 .home-page.corporate-portal {
-  background-color: var(--bg-alt);
+  background-color: var(--bg-color);
 }
 
 .hero-corporate {
   position: relative;
-  height: 60vh;
-  min-height: 400px;
-  background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover fixed;
+  height: 70vh;
+  min-height: 500px;
+  background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
+    center/cover fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 20, 25, 0.7);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 26, 0.75) 0%,
+    rgba(0, 180, 216, 0.15) 100%
+  );
 }
 
 .hero-corporate .hero-content {
   position: relative;
   z-index: 2;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-corporate h1 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   color: white;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .hero-corporate p {
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 400;
   max-width: 700px;
   margin: 0 auto;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.7;
 }
 
 .divisions-sec {
-  padding: 6rem 0;
+  padding: var(--spacing-4xl) 0;
+  background: var(--bg-color);
 }
 
 .section-header.center {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: var(--spacing-3xl);
 }
 
 .section-header.center h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary-color);
 }
 
 .subtitle {
-  color: var(--text-main);
+  color: var(--text-light);
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-md);
+  font-weight: 500;
 }
 
 .divisions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-2xl);
 }
 
 .division-card {
   position: relative;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  height: 380px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 400px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .division-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg);
 }
 
 .div-bg {
@@ -86,45 +113,74 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  transition: transform 0.6s ease;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .division-card:hover .div-bg {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 .div-content {
   position: relative;
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 70%, transparent 100%);
-  padding: 2.5rem 2rem 2rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.6) 60%,
+    transparent 100%
+  );
+  padding: var(--spacing-2xl);
   color: white;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .div-content h3 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 800;
   color: white;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 
 .div-content p {
-  color: #ccc;
-  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--transition);
+  margin-top: var(--spacing-sm);
+}
+
+.division-card:hover .div-content p {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .div-btn {
-  color: var(--accent-color);
-  font-weight: 600;
+  color: var(--accent-secondary);
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.div-btn:hover {
+  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-  .hero-corporate h1 { font-size: 2.8rem; }
-  .division-card { height: 320px; }
+  .divisions-grid {
+    gap: var(--spacing-lg);
+  }
+
+  .division-card {
+    height: 300px;
+  }
+
+  .hero-corporate h1 {
+    font-size: 2rem;
+  }
+
+  .divisions-sec {
+    padding: var(--spacing-3xl) 0;
+  }
 }
