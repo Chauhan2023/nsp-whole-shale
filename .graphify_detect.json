@@ -1,0 +1,43 @@
+{
+  "files": {
+    "code": [
+      "eslint.config.js",
+      "extract_ast.py",
+      "vite.config.js",
+      "src\\App.jsx",
+      "src\\main.jsx",
+      "src\\components\\Layout.jsx",
+      "src\\components\\CategoryCard\\CategoryCard.jsx",
+      "src\\components\\Footer\\Footer.jsx",
+      "src\\components\\Navbar\\Navbar.jsx",
+      "src\\components\\ProductCard\\ProductCard.jsx",
+      "src\\data\\mockData.js",
+      "src\\pages\\AgroProducts.jsx",
+      "src\\pages\\Contact.jsx",
+      "src\\pages\\Home.jsx",
+      "src\\pages\\Loan.jsx",
+      "src\\pages\\Products.jsx",
+      "src\\pages\\RealEstate.jsx",
+      "src\\pages\\Trading.jsx"
+    ],
+    "document": [
+      "BLUEPRINT.MD",
+      "README.md"
+    ],
+    "paper": [],
+    "image": [
+      "public\\favicon.svg",
+      "public\\icons.svg",
+      "src\\assets\\hero.png",
+      "src\\assets\\react.svg",
+      "src\\assets\\vite.svg"
+    ],
+    "video": []
+  },
+  "total_files": 25,
+  "total_words": 6202,
+  "needs_graph": false,
+  "warning": "Corpus is ~6,202 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 0
+}

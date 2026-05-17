@@ -1,0 +1,454 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "build_graph.py",
+      "file_type": "code",
+      "source_file": "C:\\Users\\rohit\\Downloads\\updated_project_git\\nsp\\build_graph.py",
+      "source_location": "L1",
+      "id": "c_users_rohit_downloads_updated_project_git_nsp_build_graph_py",
+      "community": 13,
+      "norm_label": "build_graph.py"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 14,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "extract_ast.py",
+      "file_type": "code",
+      "source_file": "extract_ast.py",
+      "source_location": "L1",
+      "id": "extract_ast_py",
+      "community": 15,
+      "norm_label": "extract_ast.py"
+    },
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "id": "vite_config_js",
+      "community": 16,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "src\\App.jsx",
+      "source_location": "L1",
+      "id": "src_app_jsx",
+      "community": 0,
+      "norm_label": "app.jsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src\\App.jsx",
+      "source_location": "L10",
+      "id": "app_app",
+      "community": 0,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "src\\main.jsx",
+      "source_location": "L1",
+      "id": "src_main_jsx",
+      "community": 17,
+      "norm_label": "main.jsx"
+    },
+    {
+      "label": "Layout.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Layout.jsx",
+      "source_location": "L1",
+      "id": "src_components_layout_jsx",
+      "community": 1,
+      "norm_label": "layout.jsx"
+    },
+    {
+      "label": "Layout()",
+      "file_type": "code",
+      "source_file": "src\\components\\Layout.jsx",
+      "source_location": "L5",
+      "id": "layout_layout",
+      "community": 1,
+      "norm_label": "layout()"
+    },
+    {
+      "label": "CategoryCard.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\CategoryCard\\CategoryCard.jsx",
+      "source_location": "L1",
+      "id": "src_components_categorycard_categorycard_jsx",
+      "community": 2,
+      "norm_label": "categorycard.jsx"
+    },
+    {
+      "label": "CategoryCard()",
+      "file_type": "code",
+      "source_file": "src\\components\\CategoryCard\\CategoryCard.jsx",
+      "source_location": "L3",
+      "id": "categorycard_categorycard",
+      "community": 2,
+      "norm_label": "categorycard()"
+    },
+    {
+      "label": "Footer.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Footer\\Footer.jsx",
+      "source_location": "L1",
+      "id": "src_components_footer_footer_jsx",
+      "community": 3,
+      "norm_label": "footer.jsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src\\components\\Footer\\Footer.jsx",
+      "source_location": "L4",
+      "id": "footer_footer",
+      "community": 3,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Navbar.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\Navbar\\Navbar.jsx",
+      "source_location": "L1",
+      "id": "src_components_navbar_navbar_jsx",
+      "community": 4,
+      "norm_label": "navbar.jsx"
+    },
+    {
+      "label": "Navbar()",
+      "file_type": "code",
+      "source_file": "src\\components\\Navbar\\Navbar.jsx",
+      "source_location": "L6",
+      "id": "navbar_navbar",
+      "community": 4,
+      "norm_label": "navbar()"
+    },
+    {
+      "label": "ProductCard.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\ProductCard\\ProductCard.jsx",
+      "source_location": "L1",
+      "id": "src_components_productcard_productcard_jsx",
+      "community": 5,
+      "norm_label": "productcard.jsx"
+    },
+    {
+      "label": "ProductCard()",
+      "file_type": "code",
+      "source_file": "src\\components\\ProductCard\\ProductCard.jsx",
+      "source_location": "L3",
+      "id": "productcard_productcard",
+      "community": 5,
+      "norm_label": "productcard()"
+    },
+    {
+      "label": "mockData.js",
+      "file_type": "code",
+      "source_file": "src\\data\\mockData.js",
+      "source_location": "L1",
+      "id": "src_data_mockdata_js",
+      "community": 18,
+      "norm_label": "mockdata.js"
+    },
+    {
+      "label": "AgroProducts.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\AgroProducts.jsx",
+      "source_location": "L1",
+      "id": "src_pages_agroproducts_jsx",
+      "community": 6,
+      "norm_label": "agroproducts.jsx"
+    },
+    {
+      "label": "AgroProducts()",
+      "file_type": "code",
+      "source_file": "src\\pages\\AgroProducts.jsx",
+      "source_location": "L6",
+      "id": "agroproducts_agroproducts",
+      "community": 6,
+      "norm_label": "agroproducts()"
+    },
+    {
+      "label": "Contact.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Contact.jsx",
+      "source_location": "L1",
+      "id": "src_pages_contact_jsx",
+      "community": 7,
+      "norm_label": "contact.jsx"
+    },
+    {
+      "label": "Contact()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Contact.jsx",
+      "source_location": "L4",
+      "id": "contact_contact",
+      "community": 7,
+      "norm_label": "contact()"
+    },
+    {
+      "label": "Home.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Home.jsx",
+      "source_location": "L1",
+      "id": "src_pages_home_jsx",
+      "community": 8,
+      "norm_label": "home.jsx"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Home.jsx",
+      "source_location": "L4",
+      "id": "home_home",
+      "community": 8,
+      "norm_label": "home()"
+    },
+    {
+      "label": "Loan.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Loan.jsx",
+      "source_location": "L1",
+      "id": "src_pages_loan_jsx",
+      "community": 9,
+      "norm_label": "loan.jsx"
+    },
+    {
+      "label": "Loan()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Loan.jsx",
+      "source_location": "L3",
+      "id": "loan_loan",
+      "community": 9,
+      "norm_label": "loan()"
+    },
+    {
+      "label": "Products.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Products.jsx",
+      "source_location": "L1",
+      "id": "src_pages_products_jsx",
+      "community": 10,
+      "norm_label": "products.jsx"
+    },
+    {
+      "label": "Products()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Products.jsx",
+      "source_location": "L6",
+      "id": "products_products",
+      "community": 10,
+      "norm_label": "products()"
+    },
+    {
+      "label": "RealEstate.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\RealEstate.jsx",
+      "source_location": "L1",
+      "id": "src_pages_realestate_jsx",
+      "community": 11,
+      "norm_label": "realestate.jsx"
+    },
+    {
+      "label": "RealEstate()",
+      "file_type": "code",
+      "source_file": "src\\pages\\RealEstate.jsx",
+      "source_location": "L3",
+      "id": "realestate_realestate",
+      "community": 11,
+      "norm_label": "realestate()"
+    },
+    {
+      "label": "Trading.jsx",
+      "file_type": "code",
+      "source_file": "src\\pages\\Trading.jsx",
+      "source_location": "L1",
+      "id": "src_pages_trading_jsx",
+      "community": 12,
+      "norm_label": "trading.jsx"
+    },
+    {
+      "label": "Trading()",
+      "file_type": "code",
+      "source_file": "src\\pages\\Trading.jsx",
+      "source_location": "L3",
+      "id": "trading_trading",
+      "community": 12,
+      "norm_label": "trading()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\App.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "src_app_jsx",
+      "_tgt": "app_app",
+      "source": "src_app_jsx",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Layout.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "src_components_layout_jsx",
+      "_tgt": "layout_layout",
+      "source": "src_components_layout_jsx",
+      "target": "layout_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\CategoryCard\\CategoryCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_categorycard_categorycard_jsx",
+      "_tgt": "categorycard_categorycard",
+      "source": "src_components_categorycard_categorycard_jsx",
+      "target": "categorycard_categorycard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Footer\\Footer.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "src_components_footer_footer_jsx",
+      "_tgt": "footer_footer",
+      "source": "src_components_footer_footer_jsx",
+      "target": "footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\Navbar\\Navbar.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "src_components_navbar_navbar_jsx",
+      "_tgt": "navbar_navbar",
+      "source": "src_components_navbar_navbar_jsx",
+      "target": "navbar_navbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\ProductCard\\ProductCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_productcard_productcard_jsx",
+      "_tgt": "productcard_productcard",
+      "source": "src_components_productcard_productcard_jsx",
+      "target": "productcard_productcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\AgroProducts.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "src_pages_agroproducts_jsx",
+      "_tgt": "agroproducts_agroproducts",
+      "source": "src_pages_agroproducts_jsx",
+      "target": "agroproducts_agroproducts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Contact.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "src_pages_contact_jsx",
+      "_tgt": "contact_contact",
+      "source": "src_pages_contact_jsx",
+      "target": "contact_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Home.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "src_pages_home_jsx",
+      "_tgt": "home_home",
+      "source": "src_pages_home_jsx",
+      "target": "home_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Loan.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_pages_loan_jsx",
+      "_tgt": "loan_loan",
+      "source": "src_pages_loan_jsx",
+      "target": "loan_loan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Products.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "src_pages_products_jsx",
+      "_tgt": "products_products",
+      "source": "src_pages_products_jsx",
+      "target": "products_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\RealEstate.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_pages_realestate_jsx",
+      "_tgt": "realestate_realestate",
+      "source": "src_pages_realestate_jsx",
+      "target": "realestate_realestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\pages\\Trading.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_pages_trading_jsx",
+      "_tgt": "trading_trading",
+      "source": "src_pages_trading_jsx",
+      "target": "trading_trading",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
